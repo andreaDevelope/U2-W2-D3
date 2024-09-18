@@ -44,6 +44,7 @@ button {
   background-color: rgb(141, 1, 12);
   color: rgb(255, 136, 0);
   border: none;
+  width: 100px;
 }
 
 header {
@@ -88,9 +89,11 @@ main .hero ul {
   display: flex;
   justify-content: space-evenly;
 }
-main .hero ul li button {
-  text-align: center;
-  margin-inline: 20%;
+main .hero ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 main .hero ul li::marker {
   color: rgb(255, 136, 0);
