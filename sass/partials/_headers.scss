@@ -1,0 +1,30 @@
+header {
+  width: 100%;
+  background-color: $primary-color;
+
+  nav {
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media screen and (min-width: 800px) {
+      justify-content: start;
+    }
+    img {
+      margin-inline: 2rem;
+    }
+
+    ul {
+      display: flex;
+      li {
+        display: flex;
+        width: 100px;
+        text-align: center;
+        a {
+          color: $secondary-color;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

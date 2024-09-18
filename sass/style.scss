@@ -1,0 +1,41 @@
+@import "./partials/resets.scss";
+@import "./partials/spacings.scss";
+@import "./partials/colors.scss";
+@import "./partials/fonts.scss";
+@import "./partials/buttons.scss";
+@import "./partials/headers.scss";
+@import "./partials/animations.scss";
+@import "./partials/mixins.scss";
+
+main {
+  .hero {
+    & div {
+      background-color: rgb(20, 20, 20);
+      width: 100%;
+    }
+
+    h1 {
+      padding-block: 2rem;
+    }
+
+    ul {
+      display: flex;
+      justify-content: space-evenly;
+      li {
+        button {
+          text-align: center;
+          margin-inline: 20%;
+        }
+      }
+      li::marker {
+        color: $secondary-color;
+      }
+      p {
+        color: $secondary-color;
+        text-decoration: none;
+        padding: 1rem;
+        margin-block: 0.5rem;
+      }
+    }
+  }
+}
